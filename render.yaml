@@ -1,0 +1,9 @@
+
+services:
+  - type: web
+    name: painel-backend
+    env: python
+    buildCommand: ""
+    startCommand: "python run.py"
+    plan: free
+    region: oregon
