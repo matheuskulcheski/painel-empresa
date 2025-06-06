@@ -1,4 +1,13 @@
 import os
+import sys
+from dotenv import load_dotenv
+
+# Adiciona o diretório atual ao caminho de importação
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+
+from app import create_app, db
+
+import os
 from dotenv import load_dotenv
 from app import create_app, db
 
